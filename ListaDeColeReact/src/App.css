@@ -25,7 +25,7 @@ nav {
 }
 
 
-button {
+.buttonnav {
     background-color: rgba(255, 169, 184, 1);
     width: 200px;
     height: 50px;
@@ -41,12 +41,12 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.buttonnav:hover {
 
     background-color: rgba(255, 226, 167, 1);
 }
 
-button:active {
+.buttonnav:active {
     color: #FFA9B8;
     background-color: rgba(255, 226, 167, 1);
 }

@@ -10,11 +10,12 @@ function App() {
     <>
     <nav>
     <img className="logo" src={logo} alt="logo" />
-    <button>+Lista</button>
-    <button>+Lista</button>
-    <button>+Lista</button>
-    <img src={Prefer} alt="prefer" />
+    <button className="buttonnav">+Lista</button>
+    <button className="buttonnav">Editar</button>
+    <button className="buttonnav">Eliminar</button>
+    <img classname="prefer" src={Prefer} alt="prefer" />
     </nav>
+
   
     </>
   );
