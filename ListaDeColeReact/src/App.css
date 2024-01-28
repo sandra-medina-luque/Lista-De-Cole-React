@@ -1,1 +1,52 @@
 
+
+nav {
+    background-color: rgba(179, 224, 245, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.logo {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+.prefer {
+    width: 5%;
+    height: 5%;
+    margin-top: 9%;
+    margin-right: 2%;
+}
+
+
+button {
+    background-color: rgba(255, 169, 184, 1);
+    width: 200px;
+    height: 50px;
+    margin-top: 10%;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'acme', sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+
+    background-color: rgba(255, 226, 167, 1);
+}
+
+button:active {
+    color: #FFA9B8;
+    background-color: rgba(255, 226, 167, 1);
+}
