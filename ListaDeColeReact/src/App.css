@@ -50,3 +50,66 @@ nav {
     color: #FFA9B8;
     background-color: rgba(255, 226, 167, 1);
 }
+main{
+    background-color: rgba(179, 224, 245, 1);
+    
+
+}
+.formlist {
+    background-color: rgba(255, 226, 167, 1);
+    width: 30%;
+    height: 100%;
+    margin-left: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+.textform{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-family: 'acme', sans-serif;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+
+.form-control {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    height: 30%;
+    width: 70%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+   
+
+}
+
+.buttonform {
+    background-color: rgba(179, 224, 245, 1);
+    width: 120px;
+    height: 50px;
+    margin-left: 32%;
+    margin-bottom: 3px;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'acme', sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.buttonform:hover,
+.buttonresult:hover {
+    color: #FFA9B8;
+    background-color: #B3E0F5;
+}
+
+.buttonform:active,
+.buttonresult:active {
+    color: #FFCC00;
+    background-color: #B3E0F5;
+}
