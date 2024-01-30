@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "userName": "Sandra",
+      "lastName1": "Medina",
+      "lastName2": "Luque",
+      "email": "sandra@gmail.com",
+      "telephone": "777777777",
+      "id": "d4eb"
+    },
+    {
+      "id": "43a9",
+      "userName": "sandra",
+      "lastName1": "",
+      "lastName2": "",
+      "email": "",
+      "telephone": ""
+    },
+    {
+      "id": "7517",
+      "userName": "sandra",
+      "lastName1": "",
+      "lastName2": "",
+      "email": "",
+      "telephone": ""
+    }
+  ]
+}
