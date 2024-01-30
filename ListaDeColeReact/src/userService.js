@@ -24,5 +24,12 @@ export const UserService = {
     async submitUser(newUser){
         
         await apiClient.post("/users", newUser)
-    }
+    },
+
+    
+    
+      async deleteUser(userId) {
+        // Implementa la lógica para eliminar el usuario con el ID proporcionado
+        await apiClient.delete(`/users/${userId}`);
+      },
 }

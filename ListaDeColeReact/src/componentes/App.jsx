@@ -8,6 +8,8 @@ import { UserService } from '../userService'
 
 const UserList = () => {
 
+  const [editingUser, setEditingUser] = useState(null);
+
   const [user, setUser] = useState({
     userName: '',
     lastName1: '',
@@ -18,10 +20,10 @@ const UserList = () => {
   const [userList, setUserList] = useState([]);
   const [listName, setListName] = useState('');
 
-  async function getData(){
-   
+  async function getData() {
+
     let users = await UserService.getAllUsers();
-    setUserList(users)  
+    setUserList(users)
   }
 
   getData();
@@ -43,20 +45,20 @@ const UserList = () => {
       alert('Por favor, complete todos los campos obligatorios.');
       return;
     }
-    
+
 
     if (!isValidEmail(user.email)) {
       alert('Correo electrónico no válido.');
       return;
     }
-  
+
     if (!isValidPhoneNumber(user.telephone)) {
       alert('Número de teléfono no válido. ');
       return;
     }
 
     await UserService.submitUser(user);
-    
+
     setUserList(prevUserList => [...prevUserList, { ...user, listName }])
     setUser({
       userName: '',
@@ -66,7 +68,18 @@ const UserList = () => {
       telephone: '',
 
     });
+  }
+
+  
+  async function handleDeleteUser(userId) {
+    
+      await UserService.deleteUser(userId);
+      getData();
+      {alert('Usuario eliminado con éxito')
+    return };
+    
   };
+
 
   function isValidPhoneNumber(phoneNumber) {
     const phoneNumberPattern = /^\d+$/;
@@ -128,6 +141,8 @@ const UserList = () => {
                 userList.map((userItem, index) => (
                   <li key={index}>
                     NOMBRE: {userItem.userName} {userItem.lastName1} {userItem.lastName2}, EMAIL: {userItem.email}, TLF: {userItem.telephone}.
+                    
+                    <button className="buttonde" onClick={() => handleDeleteUser(userItem.id)}>X</button>
                   </li>
                 ))
               }
