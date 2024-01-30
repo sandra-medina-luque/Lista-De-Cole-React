@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
-import logo from './assets/img/logo.png'
-import Prefer from './assets/img/Prefer.svg'
-import './app.css'
+import logo from '../assets/img/logo.png'
+import Prefer from '../assets/img/Prefer.svg'
+import '../componentes/app.css'
+
 
 
 const UserList = () => {
