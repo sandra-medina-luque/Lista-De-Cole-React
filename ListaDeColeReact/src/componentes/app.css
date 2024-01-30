@@ -132,7 +132,9 @@ main{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
 }
-
+thead{
+    width: 100%;
+}
 .buttonde {
     background-color: rgba(179, 224, 245, 1);
     font-family: 'acme', sans-serif;

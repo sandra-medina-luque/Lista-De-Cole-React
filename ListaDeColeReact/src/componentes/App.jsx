@@ -70,14 +70,16 @@ const UserList = () => {
     });
   }
 
-  
+
   async function handleDeleteUser(userId) {
-    
-      await UserService.deleteUser(userId);
-      getData();
-      {alert('Usuario eliminado con éxito')
-    return };
-    
+
+    await UserService.deleteUser(userId);
+    getData();
+    {
+      alert('Usuario eliminado con éxito')
+      return
+    };
+
   };
 
 
@@ -134,20 +136,34 @@ const UserList = () => {
             <button className="buttonform" onClick={handleAddUserToList}>Guardar</button>
 
           </form>
-          <form className="formresult">
+          <section className="formresult">
             <h2 className="list">Lista: {listName}</h2>
-            <ul>
-              {
-                userList.map((userItem, index) => (
-                  <li key={index}>
-                    NOMBRE: {userItem.userName} {userItem.lastName1} {userItem.lastName2}, EMAIL: {userItem.email}, TLF: {userItem.telephone}.
-                    
-                    <button className="buttonde" onClick={() => handleDeleteUser(userItem.id)}>X</button>
-                  </li>
-                ))
-              }
-            </ul>
-          </form>
+            <table className="table">
+              <thead>
+                <tr class="headertable">
+                  <th>Nombre</th>
+                  <th>Apellido1</th>
+                  <th>Apellido2</th>
+                  <th>Email</th>
+                  <th>TLF</th>
+                </tr>
+              </thead>
+              <tbody>
+                {userList.map((userItem, index) => (
+                  <tr key={index}>
+                    <td>{userItem.userName}</td>
+                    <td>{userItem.lastName1}</td>
+                    <td>{userItem.lastName2}</td>
+                    <td>{userItem.email}</td>
+                    <td>{userItem.telephone}</td>
+                    <td>
+                      <button className="buttonde" onClick={() => handleDeleteUser(userItem.id)}>X</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
         </div>
       </main>
     </>
