@@ -62,23 +62,23 @@ const UserList = () => {
     }
 
 
-    
+
 
     if (editingUser) {
-      // Si estamos editando, actualizamos el usuario existente
+
       await UserService.updateUser(editingUser.id, { ...user, listName });
       const updatedUserList = userList.map((userItem) =>
         userItem.id === editingUser.id ? { ...user, listName } : userItem
       );
       setUserList(updatedUserList);
-      setEditingUser(null); // Finaliza el modo de edición
+      setEditingUser(null);
     } else {
-      // Si no estamos editando, agregamos un nuevo usuario
+
       await UserService.submitUser({ ...user, listName });
-      getData(); // Obtener la lista actualizada después de agregar un nuevo usuario
-      
+      getData();
+
     }
-  
+
     setUser({
       userName: '',
       lastName1: '',
@@ -127,83 +127,83 @@ const UserList = () => {
   }
 
 
-    console.log(UserList);
+  console.log(UserList);
 
-    return (
-      <>
-        <nav>
-          <img className="logo" src={logo} alt="logo" />
-          <button className="buttonnav">+Lista</button>
-          <button className="buttonnav">Editar</button>
-          <button className="buttonnav">Eliminar</button>
-          <img className="prefer" src={Prefer} alt="prefer" />
-        </nav>
-        <main>
-          <div>
-            <label className="textform" name="list">Lista:</label>
-            <input type="text" className="form-control" value={listName} onChange={handleListNameChange} required />
-          </div>
-          <div className="content">
-            <form className="formlist">
-              <div className="form-group">
-                <label htmlFor="userName" className="textform">Nombre:</label>
-                <input type="text" className="form-control" name="userName" value={user.userName} onChange={handleNameChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="lastname1" className="textform">Apellido1:</label>
-                <input type="text" className="form-control" name="lastName1" value={user.lastName1} onChange={handleNameChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="lastname2" className="textform">Apellido2:</label>
-                <input type="text" className="form-control" name="lastName2" value={user.lastName2} onChange={handleNameChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email" className="textform">Email contacto:</label>
-                <input type="text" className="form-control" name="email" value={user.email} onChange={handleNameChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="telephone" className="textform">Teléfono:</label>
-                <input type="text" className="form-control" name="telephone" value={user.telephone} onChange={handleNameChange} required />
-              </div>
+  return (
+    <>
+      <nav>
+        <img className="logo" src={logo} alt="logo" />
+        <button className="buttonnav">+Lista</button>
+        <button className="buttonnav">Editar</button>
+        <button className="buttonnav">Eliminar</button>
+        <img className="prefer" src={Prefer} alt="prefer" />
+      </nav>
+      <main>
+        <div>
+          <label className="textform" name="list">Lista:</label>
+          <input type="text" className="form-control" value={listName} onChange={handleListNameChange} required />
+        </div>
+        <div className="content">
+          <form className="formlist">
+            <div className="form-group">
+              <label htmlFor="userName" className="textform">Nombre:</label>
+              <input type="text" className="form-control" name="userName" value={user.userName} onChange={handleNameChange} required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastname1" className="textform">Apellido1:</label>
+              <input type="text" className="form-control" name="lastName1" value={user.lastName1} onChange={handleNameChange} required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastname2" className="textform">Apellido2:</label>
+              <input type="text" className="form-control" name="lastName2" value={user.lastName2} onChange={handleNameChange} required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email" className="textform">Email contacto:</label>
+              <input type="text" className="form-control" name="email" value={user.email} onChange={handleNameChange} required />
+            </div>
+            <div className="form-group">
+              <label htmlFor="telephone" className="textform">Teléfono:</label>
+              <input type="text" className="form-control" name="telephone" value={user.telephone} onChange={handleNameChange} required />
+            </div>
 
-              <button className="buttonform" onClick={handleAddUserToList}>Guardar</button>
+            <button className="buttonform" onClick={handleAddUserToList}>Guardar</button>
 
-            </form>
-            <section className="formresult">
-              <h2 className="list">Lista: {listName}</h2>
-              <table className="table">
-                <thead>
-                  <tr class="headertable">
-                    <th>Nombre</th>
-                    <th>Apellido1</th>
-                    <th>Apellido2</th>
-                    <th>Email</th>
-                    <th>TLF</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {userList.map((userItem, index) => (
-                    <tr key={index}>
-                      <td>{userItem.userName}</td>
-                      <td>{userItem.lastName1}</td>
-                      <td>{userItem.lastName2}</td>
-                      <td>{userItem.email}</td>
-                      <td>{userItem.telephone}</td>
-                      <td>
-                        <div className="buttons">
+          </form>
+          <section className="formresult">
+            <h2 className="list">Lista: {listName}</h2>
+            <table className="table">
+              <thead>
+                <tr class="headertable">
+                  <th>Nombre</th>
+                  <th>Apellido1</th>
+                  <th>Apellido2</th>
+                  <th>Email</th>
+                  <th>TLF</th>
+                </tr>
+              </thead>
+              <tbody>
+                {userList.map((userItem, index) => (
+                  <tr key={index}>
+                    <td>{userItem.userName}</td>
+                    <td>{userItem.lastName1}</td>
+                    <td>{userItem.lastName2}</td>
+                    <td>{userItem.email}</td>
+                    <td>{userItem.telephone}</td>
+                    <td>
+                      <div className="buttons">
                         <button className="buttonde" onClick={() => handleEditUser(userItem)}>Edit</button>
                         <button className="buttonde" onClick={() => handleDeleteUser(userItem.id)}>X</button>
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </section>
-          </div>
-        </main>
-      </>
-    );
-  }
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </>
+  );
+}
 
-  export default UserList;
+export default UserList;

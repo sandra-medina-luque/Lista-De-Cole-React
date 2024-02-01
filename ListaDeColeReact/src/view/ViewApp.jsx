@@ -1,12 +1,12 @@
 import App from "../componentes/App"
 
 
-function ViewApp(){
-    return(
-        
+function ViewApp() {
+    return (
+
         <>
-        <App />
-        
+            <App />
+
         </>
     )
 }

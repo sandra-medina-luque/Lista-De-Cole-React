@@ -1,5 +1,3 @@
-
-
 nav {
     background-color: rgba(179, 224, 245, 1);
     display: flex;
@@ -20,8 +18,8 @@ nav {
 .prefer {
     width: 5%;
     height: 5%;
-   margin-top: 9%;
-   margin-right: 3%;
+    margin-top: 9%;
+    margin-right: 3%;
 }
 
 
@@ -50,11 +48,13 @@ nav {
     color: #FFA9B8;
     background-color: rgba(255, 226, 167, 1);
 }
-main{
+
+main {
     background-color: rgba(179, 224, 245, 1);
-    
+
 
 }
+
 .formlist {
     background-color: rgba(255, 226, 167, 1);
     width: 40%;
@@ -64,7 +64,8 @@ main{
     border-radius: 30px;
 
 }
-.textform{
+
+.textform {
     margin-top: 3%;
     margin-left: 3%;
     font-family: 'acme', sans-serif;
@@ -80,7 +81,7 @@ main{
     width: 70%;
     margin-left: 5%;
     margin-bottom: 5%;
-   
+
 
 }
 
@@ -120,9 +121,11 @@ main{
     margin-top: 2%;
     margin-bottom: 3%;
 }
-.list{
+
+.list {
     margin-left: 3%;
 }
+
 .formresult {
     background-color: rgba(255, 169, 184, 1);
     width: 52%;
@@ -130,7 +133,8 @@ main{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: row;
 
@@ -147,7 +151,7 @@ main{
     border-radius: 4px;
 }
 
-.table{
+.table {
     display: flex;
     flex-direction: column;
     overflow-x: auto;
@@ -178,6 +182,5 @@ main{
 
 
 
-   
-}
 
+}

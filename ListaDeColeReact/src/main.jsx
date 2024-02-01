@@ -6,6 +6,6 @@ import '../src/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <ViewApp/>
+    <ViewApp />
   </React.StrictMode>,
 )
