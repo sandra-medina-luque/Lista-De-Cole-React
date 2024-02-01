@@ -4,17 +4,17 @@
 ![Lista de cole](src/assets/img/logo.png)
 
 
-##Descripción
+## Descripción
 
 Está diseñado para gestionar y mostrar una lista de usuarios. Los usuarios pueden ser añadidos, editados y eliminados de la lista. El componente interactúa con un UserService para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en los datos de usuario.
 
-##Uso
+## Uso
 
 - **Dependencias e instalación:**
 
 Asegúrate de instalar las dependencias necesarias, incluyendo React.
 
-##Características
+## Características
 
 - **Listado de Usuarios:**
 Muestra una tabla con detalles de usuarios como nombre, correo electrónico y número de teléfono.
@@ -42,38 +42,38 @@ Puedes pasar los datos de usuario y las funciones de manipulación del usuario c
 Mejora los estilos y el diseño de tu aplicación para hacerla más atractiva y fácil de usar.
 Utiliza un sistema de diseño (por ejemplo, Material-UI o Styled Components) para mantener la coherencia en la apariencia de tu aplicación.
 
--**Mensajes de Confirmación:**
+- **Mensajes de Confirmación:**
 Añade mensajes de confirmación más elegantes y amigables para las operaciones de agregar, editar y eliminar usuarios.
 
--**Manejo de Errores:**
+- **Manejo de Errores:**
 Implementa un manejo de errores más robusto para las llamadas a la API. Actualmente, los errores de la API no están siendo manejados explícitamente.
 
--**Optimización de Carga de Datos:**
+- **Optimización de Carga de Datos:**
 Implementa la carga progresiva o paginación para manejar grandes conjuntos de datos de usuarios de manera más eficiente.
 
--**Internacionalización (I18n):**
+- **Internacionalización (I18n):**
 Agrega soporte para múltiples idiomas si tu aplicación está destinada a un público diverso.
 
--**Pruebas Unitarias:**
+- **Pruebas Unitarias:**
 Escribe pruebas unitarias para asegurar la robustez y confiabilidad de tu código.
 
--**Documentación:**
+- **Documentación:**
 Documenta tu código, especialmente funciones y componentes complejos, para facilitar el mantenimiento futuro.
 
--**Mejoras en la Experiencia del Usuario (UX):**
+- **Mejoras en la Experiencia del Usuario (UX):**
 Agrega animaciones y transiciones para mejorar la experiencia del usuario.
 Considera la posibilidad de implementar una barra de navegación más interactiva.
 
-##Validación de Formulario
+## Validación de Formulario
 
 El componente realiza una validación básica del formulario para campos requeridos, formato de correo electrónico y formato de número de teléfono.
 
-##Estilos
+## Estilos
 
 El componente utiliza CSS para definir estilos propios. 
 Uso de librería bootstrap para estilos definidos.
 Uso de la fuente acme implementada en el html principal.
 
-##Notas
+## Notas
 
 Contiene métodos como getAllUsers, submitUser, updateUser y deleteUser para manejar operaciones CRUD.
