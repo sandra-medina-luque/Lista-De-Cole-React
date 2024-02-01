@@ -126,6 +126,11 @@ main {
     margin-left: 3%;
 }
 
+tr{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .formresult {
     background-color: rgba(255, 169, 184, 1);
     width: 52%;
