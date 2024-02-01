@@ -39,12 +39,12 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.buttonnav:hover {
+.buttonnav:hover, .buttonde:hover {
 
     background-color: rgba(255, 226, 167, 1);
 }
 
-.buttonnav:active {
+.buttonnav:active, .buttonde:active {
     color: #FFA9B8;
     background-color: rgba(255, 226, 167, 1);
 }
@@ -126,10 +126,13 @@ main {
     margin-left: 3%;
 }
 
-tr{
+
+tr {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  
 }
+
 
 .formresult {
     background-color: rgba(255, 169, 184, 1);
