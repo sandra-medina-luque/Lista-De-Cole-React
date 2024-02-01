@@ -76,6 +76,7 @@ const UserList = () => {
       // Si no estamos editando, agregamos un nuevo usuario
       await UserService.submitUser({ ...user, listName });
       getData(); // Obtener la lista actualizada después de agregar un nuevo usuario
+      
     }
   
     setUser({
