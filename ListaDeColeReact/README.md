@@ -4,17 +4,17 @@
 ![Lista de cole](src/assets/img/logo.png)
 
 
-Descripción:
+<span style="font-size: larger;">Descripción</span>
 
 Está diseñado para gestionar y mostrar una lista de usuarios. Los usuarios pueden ser añadidos, editados y eliminados de la lista. El componente interactúa con un UserService para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en los datos de usuario.
 
-Uso:
+<span style="font-size: larger;">Uso.</span>
 
 -Dependencias e instalación:
 
 Asegúrate de instalar las dependencias necesarias, incluyendo React.
 
-Características:
+<span style="font-size: larger;">Características</span>
 
 -Listado de Usuarios: Muestra una tabla con detalles de usuarios como nombre, correo electrónico y número de teléfono.
 
@@ -27,6 +27,7 @@ Características:
 -Utiliza un enrutador (por ejemplo, react-router-dom) para gestionar las diferentes vistas de tu aplicación.
 
 -Define rutas para la vista actual (ViewApp) y cualquier otra vista que puedas agregar en el futuro.
+
 -Manejo de Estado:
 Considera el uso de un estado global (por ejemplo, React Context o Redux) para compartir el estado entre componentes de manera más eficiente.
 Puedes pasar los datos de usuario y las funciones de manipulación del usuario como propiedades a través del contexto para facilitar su acceso.
@@ -57,16 +58,16 @@ Documenta tu código, especialmente funciones y componentes complejos, para faci
 Agrega animaciones y transiciones para mejorar la experiencia del usuario.
 Considera la posibilidad de implementar una barra de navegación más interactiva.
 
-Validación de Formulario:
+<span style="font-size: larger;">Validación de Formulario</span>
 
 El componente realiza una validación básica del formulario para campos requeridos, formato de correo electrónico y formato de número de teléfono.
 
-Estilos:
+<span style="font-size: larger;">Estilos</span>
 
 El componente utiliza CSS para definir estilos propios. 
 Uso de librería bootstrap para estilos definidos.
 Uso de la fuente acme implementada en el html principal.
 
-Notas:
+<span style="font-size: larger;">Notas</span>
 
 Contiene métodos como getAllUsers, submitUser, updateUser y deleteUser para manejar operaciones CRUD.
