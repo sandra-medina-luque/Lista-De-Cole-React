@@ -7,9 +7,8 @@ Está diseñado para gestionar y mostrar una lista de usuarios. Los usuarios pue
 
 Uso:
 
--Dependencias
+-Dependencias e instalación:
 React.
--Instalación
 Asegúrate de instalar las dependencias necesarias, incluyendo React.
 
 Características:
