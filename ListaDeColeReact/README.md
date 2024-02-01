@@ -1,6 +1,9 @@
 # Lista De Cole
 
 
+![Lista de cole](src/assets/img/logo.png)
+
+
 Descripción:
 
 Está diseñado para gestionar y mostrar una lista de usuarios. Los usuarios pueden ser añadidos, editados y eliminados de la lista. El componente interactúa con un UserService para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en los datos de usuario.
