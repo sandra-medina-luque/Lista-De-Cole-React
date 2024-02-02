@@ -1,7 +1,7 @@
 # Lista De Cole
 
 
-![Lista de cole](src/assets/img/logo.png)
+![Lista de cole](listadecolereact/src/assets/img/logo.png)
 
 
 ## Descripción
