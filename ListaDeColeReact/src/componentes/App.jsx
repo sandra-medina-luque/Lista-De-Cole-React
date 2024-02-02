@@ -86,7 +86,7 @@ const UserList = () => {
       email: '',
       telephone: '',
     });
-    setListName('');
+    
   }
 
 

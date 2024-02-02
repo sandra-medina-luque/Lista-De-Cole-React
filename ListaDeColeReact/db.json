@@ -8,6 +8,24 @@
       "telephone": "777777777",
       "listName": "",
       "id": "05ec"
+    },
+    {
+      "id": "d9b3",
+      "userName": "Susana",
+      "lastName1": "Lopez",
+      "lastName2": "Diaz",
+      "email": "susana@hotmail.com",
+      "telephone": "666666666",
+      "listName": "Excursión"
+    },
+    {
+      "id": "7e84",
+      "userName": "Sandra",
+      "lastName1": "Medina",
+      "lastName2": "Luque",
+      "email": "sandrota42@gmail.com",
+      "telephone": "22222222",
+      "listName": "Excursión"
     }
   ]
 }
